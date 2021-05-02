@@ -1,0 +1,14 @@
+version: '2'
+services:
+  sveltekit:
+    image: aamservices/pm2-sveltekit:latest
+    restart: unless-stopped
+    volumes:
+      - sveltekit_data:/usr/src/app
+    networks:
+      - internal
+    ports:
+      - 3000
+volumes:
+  sveltekit_data:
+    driver: local
