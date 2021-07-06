@@ -1,7 +1,7 @@
 {
     name: 'sveltekit',
     cwd: '/usr/src/app/',
-    script: 'NODE_ENV=production && npm run build && npm run start -- --host 0.0.0.0',
+    script: 'NODE_ENV=development && npm run dev -- --host 0.0.0.0',
     instances: 1,
     autorestart: true,
     watch: false,
